@@ -21,16 +21,16 @@
               <!-- top text -->
               <div class="form-group">
                 <label for="">Top Text</label>
-                <input type="text" class="form-control" name="topText" />
+                <input type="text" class="form-control" name="topText" [(ngModel)]='topText' (keyup)='drawText()'/>
               </div>
 
               <!-- bottom text -->
               <div class="form-group">
                 <label for="">Bottom Text</label>
-                <input type="text" class="form-control" name="bottomText" />
+                <input type="text" class="form-control" name="bottomText" [(ngModel)]='bottomText' (keyup)='drawText()' />
               </div>
               <!-- Text color picker  -->
-              <div class="row">
+              <div class="row ">
                 <div class="col-md-6">
                   <div class="form-group">
                     <label for="">Text Color</label>
