@@ -13,7 +13,8 @@
                   type="file"
                   name=""
                   class="form-control"
-                  accept="imace/*"
+                  accept="image/*"
+                  (change)="preview($event)"
                   id=""
                 />
               </div>
@@ -57,7 +58,7 @@
       <div class="col-md-6">
         <canvas
           class="drop-shadow"
-          id="meme-canvas"
+          #memeCanvas
           width="700"
           height="800"
           style="background-color: #f9f9fd"

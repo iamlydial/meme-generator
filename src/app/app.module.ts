@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import {ColorChromeModule} from 'ngx-color/chrome'
 
@@ -17,7 +18,8 @@ import { GeneratorComponent } from './generator/generator.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ColorChromeModule  
+    ColorChromeModule,
+    FormsModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
